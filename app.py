@@ -13,7 +13,7 @@ gemini_key = st.secrets["GOOGLE_API_KEY"]
 # 3. Initialize the Agent (cached so it doesn't reload every click)
 if "agent" not in st.session_state:
     st.session_state.agent = Agent(
-        model=Gemini(id="gemini-2.0-flash", api_key=gemini_key),
+        model=Gemini(id="gemini-3-flash-latest", api_key=gemini_key),
         instructions=[
             "Follow Ruth Miskin Set 3 sequence strictly.",
             "Include Fred Talk and Fred Fingers in every lesson.",
