@@ -20,7 +20,9 @@ if "agent" not in st.session_state:
             "Pair phonics with one 'Brain Development' game for 6-year-olds.",
             "Use Growth Mindset coaching."
         ],
-        add_history_to_messages=True,
+        # UPDATED PARAMETERS
+        add_history_to_context=True, 
+        num_history_runs=3,
         markdown=True
     )
 
